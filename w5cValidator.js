@@ -49,6 +49,7 @@
                     if ($elem && $elem.parent().hasClass("input-group")) {
                         $elem = angular.element(elem.parent());
                     }
+                    //
 
                     if (!this.isEmpty($group) && !$group.hasClass("has-error")) {
                         $group.addClass("has-error");
