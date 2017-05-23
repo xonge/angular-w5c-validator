@@ -1,8 +1,8 @@
 {
   "author": {
-    "name": "https://github.com/why520crazy/w5c-validator-angular"
+    "name": "https://github.com/xonge/w5c-validator-angular"
   },
-  "name": "w5c-validator",
+  "name": "w5c-validator-dev",
   "version": "2.4.25",
   "keywords": [
     "angular",
@@ -15,7 +15,19 @@
     "example",
     "Gruntfile.js",
     "index.html",
-    "package.json"
+    "package.json",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tests"
   ],
-  "main": ["w5cValidator.js"]
+  "main": [
+    "w5cValidator.js"
+  ],
+  "homepage": "https://github.com/xonge/angular-w5c-validator",
+  "authors": [
+    "daxiong <daxiong@yunyibang.com>"
+  ],
+  "description": "",
+  "license": "MIT"
 }
