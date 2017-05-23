@@ -45,6 +45,10 @@
                     var $elem = angular.element(elem),
                         $group = getParentGroup($elem);
 
+                    if ($elem && $elem.parent().hasClass("input-group")) {
+                        $elem = angular.element(elem.parent());
+                    }
+
                     if (!this.isEmpty($group) && !$group.hasClass("has-error")) {
                         $group.addClass("has-error");
 
@@ -57,6 +61,10 @@
                 this.defaultRemoveError = function (elem) {
                     var $elem = angular.element(elem),
                         $group = getParentGroup($elem);
+
+                    if ($elem && $elem.parent().hasClass("input-group")) {
+                        $elem = angular.element(elem.parent());
+                    }
 
                     if (!this.isEmpty($group) && $group.hasClass("has-error")) {
                         $group.removeClass("has-error");
