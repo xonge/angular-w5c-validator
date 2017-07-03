@@ -68,6 +68,7 @@
                     if ($elem && $elem.parent().hasClass("input-group")) {
                         $elem = $elem.parent();
                         //
+                        //
                     }
 
                     if (!this.isEmpty($group) && $group.hasClass("has-error")) {
