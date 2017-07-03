@@ -47,7 +47,7 @@
                         $group = getParentGroup($elem);
 
                     if ($elem && $elem.parent().hasClass("input-group")) {
-                        $elem = angular.element(elem.parent());
+                        $elem = $elem.parent();
                     }
                     //
                     //
@@ -66,7 +66,7 @@
                         $group = getParentGroup($elem);
 
                     if ($elem && $elem.parent().hasClass("input-group")) {
-                        $elem = angular.element(elem.parent());
+                        $elem = $elem.parent();
                     }
 
                     if (!this.isEmpty($group) && $group.hasClass("has-error")) {
